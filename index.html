@@ -1,41 +1,195 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>GitHub Repo Gallery</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@500&display=swap"
-            rel="stylesheet" />
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-            crossorigin="anonymous" />
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/styles.css" />
-        <script src="js/script.js" defer></script>
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <title>Final Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+  
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  
+    <meta name="theme-color" content="#fafafa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alike&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet">
+  </head>
 
-    <body>
-        <main class="container">
-            <div class="badge">
-                <div class="circle"></div>
+<body>
+  <header>
+    <div class="content-wrapper">
+      <nav>
+        <ul>
+          <li>
+              <a href="#work">projects</a>
+          </li>
+            <li>
+              <a href="skills">skills</a>
+            </li>
+            <li>
+               <a href="#about">about</a>
+            </li>
+              <li>
+                <a href="#contact">contact</a>
+              </li>
+        </ul>
+      </nav>
+      <div class="home-title">
+        <h1>Hello and Good Day! Allow me to introduce myself. My name is Gregg Johnson</h1>
+        <h2>
+          I am a Front End Developer in La Center Washington, who creates distinct and colorful websites according to your wants and needs.
+        </h2>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article class="portfolio">
+      <section id="work">
+        <div class="content-wrapper">
+          <h3 class="portfolio-header">Projects</h3> <!-- implement change to Projects -->
+          <div class="portfolio-wrapper">
+            <div class="home-portfolio-piece">
+              <figure>
+                <a href="https://i4u8y.csb.app" target="_blank"><img src="https://www.nicepng.com/png/detail/80-804686_pink-sticky-note-clip-art-at-clker-sticky.png"
+                    alt="Sticky Note Project"></a>
+              </figure>
+              <h4>Super Sticky Notes</h4>
+              <p class="project-description">A greenfield project that creates a Sticky Notes web app. Uses
+                mulitple
+                components to build the classic sticky note UI with the ability to add, edit, delete and search
+                for notes.</p>
+              <p><span>Skills: </span>React, JSX, Components</p>
+              <p><span>Tools: </span>CodeSandbox, Props, State</p>
+              <a class="project-link" href="https://i4u8y.csb.app" target="_blank">live page</a>
             </div>
-            <h1><i class="fab fa-github-alt"></i> GitHub Repo Gallery</h1>
-            <section class="intro">
-                <div class="overview"></div>
-            </section>
-
-            <section class="repos">
-                <input type="text" class="filter-repos hide" placeholder="Search by name" />
-                <ul class="repo-list"></ul>
-            </section>
-            <section class="repo-data hide"></section>
-            <div class="button-container">
-                <button class="view-repos hide">Back to Repo Gallery</button>
+            <div class="home-portfolio-piece">
+              <figure>
+                <a href="https://fuzzhobbes.github.io/greg-repo-gallery/" target="blank"><img
+                   src="https://pngimg.com/uploads/github/small/github_PNG58.png" alt="GitHub Repo Gallery"></a>
+              </figure>
+              
+              <h4>GitHub Repo Gallery</h4>
+              <p class="project-description">Check out my work. This uses GitHub's API to pull data from my GitHub portfolio to
+                create a gallery
+                of repos. Visitors to the site can click on the repos to see more details and a link to the repo.</p>
+              <p><span>Skills: </span>JavaScript</p>
+              <p><span>Tools: </span>REST API, GitHub Pages</p>
+              <a class="project-link" href="https://fuzzhobbes.github.io/greg-repo-gallery/" target="_blank">live page</a>
             </div>
-        </main>
-    </body>
+            <div class="home-portfolio-piece">
+              <figure>
+                <a href="https://skillcrush.github.io/guess-the-word/" target="_blank"><img
+                    src="https://lh3.googleusercontent.com/xSd4DBcVQF_Fz-sJW-zJeSQro6JzcxyqvqKdRxI_V8VRcKdXCRmxWB2xnNOZa_F3wCw" alt="Guess the Word Game"></a>
+              </figure>
+              <h4>Guess the Word Game</h4>
+              <p class="project-description">Can you guess the word? Players guess the word by entering one letter at a time. If
+                the player
+                guesses all the letters correctly before they use up their allotted guesses, they win!</p>
+              <p><span>Skills: </span>JavaScript</p>
+              <p><span>Tools: </span>GitHub Pages, JSON</p>
+              <a class="project-link" href="https://skillcrush.github.io/guess-the-word/" target="_blank">live page</a>
+            </div>  
+          </div>  
+        </div>  
+      </section>
+
+      <section id="skills">
+        <div class="content-wrapper">
+          <h3 class="skills-header">Skills</h3>
+          <h4>Developer Skills</h4>
+          <div class="language-wrapper">
+            <p class="skill">HTML and CSS</p>
+            <p class="skill">JavaScript</p>
+            <p class="skill">React</p>
+            <p class="skill">Responsive Web Design</p>
+            <p class="skill">Git and GitHub</p>
+          </div>
+          <h4>Tech Stack</h4>
+          <div class="tool-wrapper">
+            <p class="tool">Chrome DevTools</p>
+            <p class="tool">GitHub Pages</p>
+            <p class="tool">API</p>
+            <p class="tool">Photoshop</p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <section id="about">
+      <div class="content-wrapper">
+        <div class="about-content-wrapper">
+          <figure>
+            <img src="https://scontent.fhio2-2.fna.fbcdn.net/v/t39.30808-6/274325590_463360125298273_5897277978019980073_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=174925&_nc_ohc=41uI3cStpVsAX94WDPK&_nc_ht=scontent.fhio2-2.fna&oh=00_AT_DTZ91El60VhWKz3Hy30QbE7zyfN6Z3_SsyxJVWeJ5bQ&oe=6229A9F7" alt="" id="profile-image">
+          </figure>
+          <div class="about-info">
+            <h3>Hello again! Gregg Johnson here.</h3>
+            <h4>I'm a Front End  Developer that creates colorful, clean, and responsive websites for a varity of needs.</h4>
+            <p class="about-text">I got a little taste of coding when I built the company website on a shopify platform. Since that time, I made it my goal to learn coding and become a web developer. It has been a hard and rewarding journey.
+              When I'm not coding, my wife and I love camping and hiking. I am also a comic book geek!
+            </p>
+            <p><span>Can't wait to work with you!</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="content-wrapper">
+      <h3>Let's get in touch</h3>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h5 class="contact-title">I am the one!</h5>
+          <p>360-857-8468</p>
+          <p>fuzzhobbes@gmail.com</p>
+        </div>
+        <div class="contact-info follow-section">
+          <h5 class="contact-title">Follow me</h5>
+          <ul class="social-icons">
+            <li><a href="https://www.linkedin.com/in/gregg-johnson-0b3187112/" target="_blank"><i
+                  class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li><a href="https://github.com/fuzzhobbes" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.facebook.com/gregg.johnson.104855" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          </ul>
+        </div>
+        <div class="contact-info">
+          <h5 class="contact-title">Let's Talk</h5>
+          <p>La Center, WA.</p>
+          <p>Let's meet for coffee!</p>
+        </div>
+      </div>
+      <p>Copyright
+        <script>document.write(new Date().getFullYear())</script> | Gregg Johnson
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
 
 </html>
